@@ -70,7 +70,7 @@ A navy QR code (540×540px PNG, Life Arise brand colour #1F3864) was previously 
 
 ## Outstanding / to verify
 
-1. **Immediate next step:** git init + local commit in this folder (via Cline), pause before push until the GitHub repo exists.
-2. Push to GitHub, then set up the GitHub repo and connect it to Cloudflare Pages (see Deployment steps above) — not yet done as of this update. Dashboard steps (Pages project creation, domain setup) are Dave-only.
+1. ~~git init + local commit~~ — **done 25 Sept 2026** (commit `098252e`, branch `main`, pushed to `https://github.com/Daveflyon/btf-lifearise` and verified on the remote). GitHub is now the source of truth.
+2. Connect the GitHub repo to Cloudflare Pages — dashboard step, Dave only (no build command; output directory `/`). Then custom domain in Cloudflare's dashboard.
 3. Regenerate the QR code once the new Cloudflare domain is live — the current one points at the Netlify site, which is being retired.
 4. `favicon.ico` is referenced but missing — low priority, cosmetic.
