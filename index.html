@@ -169,8 +169,16 @@
     color: #ffffff;
     padding: 14px 18px;
     display: flex;
-    align-items: baseline;
-    gap: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .section-header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .section-tag {
@@ -292,9 +300,11 @@
 
 <div class="section-card">
   <button class="accordion-btn section-header" aria-expanded="false" aria-controls="section-a-body" id="section-a-btn">
-    <span class="section-tag">Section A</span>
+    <span class="section-header-top">
+      <span class="section-tag">Section A</span>
+      <span class="accordion-icon" aria-hidden="true">▼</span>
+    </span>
     <span class="section-title-text">The Gospel Foundation</span>
-    <span class="accordion-icon" aria-hidden="true">▼</span>
   </button>
   <div class="accordion-body" id="section-a-body" role="region" aria-labelledby="section-a-btn">
   <p class="section-descriptor">Lessons 1–3. What the Gospel actually is, how God saves us and what it means to stand righteous before Him.</p>
@@ -317,9 +327,11 @@
 
 <div class="section-card">
   <button class="accordion-btn section-header" aria-expanded="false" aria-controls="section-b-body" id="section-b-btn">
-    <span class="section-tag">Section B</span>
+    <span class="section-header-top">
+      <span class="section-tag">Section B</span>
+      <span class="accordion-icon" aria-hidden="true">▼</span>
+    </span>
     <span class="section-title-text">Knowing God</span>
-    <span class="accordion-icon" aria-hidden="true">▼</span>
   </button>
   <div class="accordion-body" id="section-b-body" role="region" aria-labelledby="section-b-btn">
   <p class="section-descriptor">Lessons 4–5. What it means to be in relationship with God and the true character of the God we are relating to.</p>
@@ -338,9 +350,11 @@
 
 <div class="section-card">
   <button class="accordion-btn section-header" aria-expanded="false" aria-controls="section-c-body" id="section-c-btn">
-    <span class="section-tag">Section C</span>
+    <span class="section-header-top">
+      <span class="section-tag">Section C</span>
+      <span class="accordion-icon" aria-hidden="true">▼</span>
+    </span>
     <span class="section-title-text">Response and Commitment</span>
-    <span class="accordion-icon" aria-hidden="true">▼</span>
   </button>
   <div class="accordion-body" id="section-c-body" role="region" aria-labelledby="section-c-btn">
   <p class="section-descriptor">Lessons 6–8. How we respond to what God has done: through repentance, wholehearted commitment and water baptism.</p>
@@ -363,9 +377,11 @@
 
 <div class="section-card">
   <button class="accordion-btn section-header" aria-expanded="false" aria-controls="section-d-body" id="section-d-btn">
-    <span class="section-tag">Section D</span>
+    <span class="section-header-top">
+      <span class="section-tag">Section D</span>
+      <span class="accordion-icon" aria-hidden="true">▼</span>
+    </span>
     <span class="section-title-text">Life in Christ</span>
-    <span class="accordion-icon" aria-hidden="true">▼</span>
   </button>
   <div class="accordion-body" id="section-d-body" role="region" aria-labelledby="section-d-btn">
   <p class="section-descriptor">Lessons 9–16. Who you now are in Christ, how to handle sin, the trustworthiness of God's Word and living in the power of the Holy Spirit.</p>
